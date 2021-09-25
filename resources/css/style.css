@@ -67,7 +67,7 @@ header {
 .tile {
     width: 100%;
     height: 100%;
-    background-image: url("./resources/images/tiles.png");
+    background-image: url("../images/tiles.png");
     background-size: 334px 164px;
 }
 
