@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Sergio Soriano" />
+    <title>Minesweeper | Sergio Soriano</title>
+    
+    <link rel="stylesheet" href="/resources/css/style.css" />
+    <script src="/resources/js/minefield.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>MINESWEEPER</h1>
+      <div class="minesweeper">
+        <header>
+          <div class="digital">
+            <img id="mines_a" />
+            <img id="mines_b" />
+            <img id="mines_c" />
+          </div>
+
+          <div class="game_button">
+            <img class="tile face smile" id="game_button" />
+          </div>
+
+          <div class="digital">
+            <img id="timer_a" />
+            <img id="timer_b" />
+            <img id="timer_c" />
+          </div>
+        </header>
+
+        <div id="grid"></div>
+      </div>
+      <div class="options">
+        <label>Columns<input type="number" id="cols" value=16></label>
+        <label>Rows<input type="number" id="rows" value=16></label>
+        <label>Mines<input type="number" id="mines" value=40></label>
+      </div>
+      <a href="http://sergiosoriano.com" target="_blank"><script>document.write(new Date().getFullYear())</script> Sergio Soriano</a>
+    </div>
+    <script src="/resources/js/script.js"></script>
+  </body>
+</html>

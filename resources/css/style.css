@@ -1,0 +1,227 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    overflow: hidden;
+    font-family: monospace, Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100%;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.options {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.options input {
+    margin: 5px;
+    width: 75px;
+}
+
+.minesweeper {    
+   display: flex;
+   flex-direction: column;
+   border: 2px solid rgb(196, 196, 196);
+   border-radius: 2px;
+   background-color: lightgray;
+}
+
+.digital {
+    display: flex;
+}
+
+header {
+    flex: 0;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    padding: 5px;
+    margin: 0;
+}
+
+.game_button {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.grid {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: grid;
+}
+
+.tile {
+    width: 100%;
+    height: 100%;
+    background-image: url("/resources/images/tiles.png");
+    background-size: 334px 164px;
+}
+
+/* **** FACE **** */
+
+.face {    
+    width: 48px;
+    height: 48px;
+}
+
+.smile {
+    background-position: 0px -48px;
+}
+
+.smile-pressed {
+    background-position: -50px -48px;
+}
+
+.scared {
+    background-position: -100px -48px;
+}
+
+.thug-life {
+    background-position: -150px -48px;
+}
+
+.dead {
+    background-position: -200px -48px;
+}
+
+/* **** GRID ELEMENTS **** */
+
+.cover {
+    background-position: 0px -98px;
+}
+
+.flag {
+    background-position: -68px -98px;
+}
+
+.question {
+    background-position: -102px -98px;
+}
+
+.question-pressed {
+    background-position: -136px -98px;
+}
+
+.mine {
+    background-position: -170px -98px;
+}
+
+.mine-red {
+    background-position: -204px -98px;
+}
+
+.mine-not {
+    background-position: -238px -98px;
+}
+
+.m-0 {
+    background-position: -34px -98px;
+}
+
+.m-1 {
+    background-position: 0px -132px;
+}
+
+.m-2 {
+    background-position: -34px -132px;
+}
+
+.m-3 {
+    background-position: -68px -132px;
+}
+
+.m-4 {
+    background-position: -102px -132px;
+}
+
+.m-5 {
+    background-position: -136px -132px;
+}
+
+.m-6 {
+    background-position: -170px -132px;
+}
+
+.m-7 {
+    background-position: -204px -132px;
+}
+
+.m-8 {
+    background-position: -238px -132px;
+}
+
+/* **** NUMBERS **** */
+
+.number {
+    width: 26px;
+    height: 46px;
+}
+
+.n-1 {
+    background-position: 0px 0px;
+}
+
+.n-2 {
+    background-position: -28px 0px;
+}
+
+.n-3 {
+    background-position: -56px 0px;
+}
+
+.n-4 {
+    background-position: -84px 0px;
+}
+
+.n-5 {
+    background-position: -112px 0px;
+}
+
+.n-6 {
+    background-position: -140px 0px;
+}
+
+.n-7 {
+    background-position: -168px 0px;
+}
+
+.n-8 {
+    background-position: -196px 0px;
+}
+
+.n-9 {
+    background-position: -224px 0px;
+}
+
+.n-0 {
+    background-position: -252px 0px;
+}
+
+.minus {
+    background-position: -280px 0px;
+}
+
+.empty {
+    background-position: -308px 0px;
+}
+
+a, a:hover, a:focus, a:active {
+    padding-top: 20px;
+    text-decoration: none;
+    color: rgb(53, 53, 53);
+    font-size: 15px;
+}
