@@ -42,12 +42,15 @@ window.onload = function() {
     });
 
     let changeListener = ()=> {
-        iCols.value = Math.max(7, iCols.value);
-        iRows.value = Math.max(1, iRows.value);
-        iMines.value = Math.max(1, iMines.value);
-        interface.cols = iCols.value;
-        interface.rows = iRows.value;
-        interface.mineCount = iMines.value;
+        let cols = Math.max(7, iCols.value);
+        let rows = Math.max(1, iRows.value);
+        let mineCount = Math.max(1, Math.min(cols * rows - 1, iMines.value));
+        iCols.value = cols;
+        iRows.value = rows;
+        iMines.value = mineCount;
+        interface.cols = cols;
+        interface.rows = rows;
+        interface.mineCount = mineCount;
         minefield.initialize(interface); // initialize
     };
 
